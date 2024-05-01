@@ -1,0 +1,104 @@
+  .modal {
+    font-size: 12px;
+    background-color: #151b29;
+    width: auto ;
+    height: auto;
+    position: relative;
+    padding: 2rem;
+    margin:.5rem;
+    border-radius: 3rem;
+    align-items: center;
+  }
+  .overflow{
+
+  }
+
+
+  .centers{
+    padding-left: 18rem;
+    padding-right: 1rem;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .centers{
+      padding-left: 12rem;
+      padding-right: 1rem;
+    }
+    .overflow{
+      overflow-y: scroll; height:500px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .centers{
+      padding-left: 4rem;
+      padding-right: 1rem;
+    }
+    .overflow{
+      overflow-y: scroll; height:650px;
+    }
+  
+  }
+
+  @media screen and (max-width: 768px)and (min-width: 100px) {
+    .centers{
+      padding-left: 0rem;
+      padding-right: 1rem;
+    }
+    .overflow{
+      overflow-y: scroll; height:500px;
+    }
+  }
+  .modal > .header {
+    background-color: #111827 var(--tw-gradient-from-position);
+    border-bottom: 1px solid gray;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 5px;
+    
+  }
+
+  .restrict-width{
+    max-width: 2000px;
+
+  }
+  .modal > .content {
+    color: #ffffff;
+    padding: 10px 5px;
+    max-width: 2000px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    justify-content: left; 
+  }
+  .modal > .actions {
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: 20px;
+    top: 20px;
+    font-size: 34px;
+    background-color: #111827 var(--tw-gradient-from-position);
+    color: #cfcece;
+
+  }
+
+
+  .tech-stack {
+    width: auto !important;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.75rem 1rem 1rem 1rem;
+    padding-bottom: 1rem;
+    cursor: default !important;
+  }
