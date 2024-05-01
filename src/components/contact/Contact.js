@@ -13,9 +13,9 @@ const Contact = () => {
 
   // ========== Email Validation start here ==============
   const emailValidation = () => {
-    // return String(email)
-    //   .toLocaleLowerCase()
-    //   .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+    return String(email)
+      .toLocaleLowerCase()
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
   // ========== Email Validation end here ================
 
@@ -26,7 +26,7 @@ const Contact = () => {
     email:`${email}`,
     subject:`${subject}`,
     message:`${message}`};
-    let response = await fetch("/api/contact",{
+    let response = await fetch("https://shubham-portfolio-backend.onrender.com/api/contact",{
       method: "POST",
       headers: {
         "content-Type": "application/json;charset=utf-8"
